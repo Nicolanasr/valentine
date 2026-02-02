@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question for You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="card" class="card">
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            
+            <div id="content-area">
+                <!-- Content injected by JS -->
+                <h1 id="main-text">Hi Baby! ❤️</h1>
+                <p id="sub-text">I have a few questions for you...</p>
+                
+                <div id="options-container" class="options-container">
+                    <button id="start-btn" class="btn primary-btn" onclick="nextStep()">Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden audio element if you want background music later -->
+    <!-- <audio id="bg-music" src="bg-music.mp3"></audio> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
