@@ -2,34 +2,34 @@
 const config = {
     questions: [
         {
-            text: "Where was our first date? ❤️",
+            text: "Zombie Apocalypse! 🧟‍♂️ What am I doing?",
             options: [
-                { text: "The Coffee Shop", isCorrect: true }, // Customize this!
-                { text: "The Movies", isCorrect: false },
-                { text: "A Park", isCorrect: false }
+                { text: "Leading the Army", isCorrect: true },
+                { text: "Crying in the closet", isCorrect: false },
+                { text: "Sacrificing you to save myself", isCorrect: false }
             ]
         },
         {
-            text: "What is my favorite food? 🍕",
+            text: "What is the ONE food you'd trade me for? 🍣",
             options: [
-                { text: "Pizza", isCorrect: true }, // Customize this!
-                { text: "Sushi", isCorrect: false },
-                { text: "Tacos", isCorrect: false }
+                { text: "Sushi", isCorrect: true },
+                { text: "Chicken Nuggets", isCorrect: false },
+                { text: "A single corn chip", isCorrect: false }
             ]
         },
         {
-            text: "When is our anniversary? 📅",
+            text: "My annoying habit that you secretly love? 🤪",
             options: [
-                { text: "February 14th", isCorrect: false },
-                { text: "July 24th", isCorrect: true }, // Customize this!
-                { text: "December 25th", isCorrect: false }
+                { text: "Making Dad Jokes", isCorrect: true },
+                { text: "Singing in the shower", isCorrect: false },
+                { text: "Stealing the covers", isCorrect: false }
             ]
         },
         {
-            text: "Who said 'I love you' first? 😉",
+            text: "Who is the better kisser? 💋",
             options: [
-                { text: "Me (of course)", isCorrect: true }, // You can make both correct if you want!
-                { text: "You", isCorrect: true }
+                { text: "You! (Obviously)", isCorrect: true },
+                { text: "Me (In my dreams)", isCorrect: false }
             ]
         }
     ],
