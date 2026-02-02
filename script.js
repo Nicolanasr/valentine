@@ -33,8 +33,6 @@ const config = {
             options: [
                 { text: "You! (Obviously)", response: "Correct answer! 😘" },
                 { text: "Me (In my dreams)", response: "Keep dreaming! 😴" },
-                { text: "Ryan Gosling", response: "Okay, maybe him... but he's not here! 🎥" },
-                { text: "The Dog", response: "Eww! 🐶" }
             ]
         }
     ],
