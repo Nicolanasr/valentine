@@ -6,7 +6,8 @@ const config = {
             options: [
                 { text: "Leading the Army", response: "That's why you're the boss! 😎" },
                 { text: "Crying in the closet", response: "Don't worry, I'll protect you! 🛡️" },
-                { text: "Sacrificing you to save myself", response: "Wow... rude. 😂" }
+                { text: "Sacrificing you to save myself", response: "Wow... rude. 😂" },
+                { text: "Cooking for the apocalypse", response: "At least we won't go hungry! 🍳" }
             ]
         },
         {
@@ -14,7 +15,8 @@ const config = {
             options: [
                 { text: "Sushi", response: "Good choice, I respect it. 🍣" },
                 { text: "Chicken Nuggets", response: "Really? Nuggies? 🍗" },
-                { text: "Truffle chips", response: "I'm worth more than a chip! 😭" }
+                { text: "Truffle chips", response: "I'm worth more than a chip! 😭" },
+                { text: "A bottle of wine", response: "Fair trade. 🍷" }
             ]
         },
         {
@@ -22,14 +24,17 @@ const config = {
             options: [
                 { text: "Making Dad Jokes", response: "I knew you secretly loved them! 🤡" },
                 { text: "Singing ", response: "My voice is angelic, admit it! 🎤" },
-                { text: "Acting as a child", response: "We all need that childishness" }
+                { text: "Acting as a child", response: "We all need that childishness ❤️" },
+                { text: "Talking during movies", response: "I'm adding commentary! 🎬" }
             ]
         },
         {
             text: "Who is the better kisser? 💋",
             options: [
                 { text: "You! (Obviously)", response: "Correct answer! 😘" },
-                { text: "Me (In my dreams)", response: "Keep dreaming! 😴" }
+                { text: "Me (In my dreams)", response: "Keep dreaming! 😴" },
+                { text: "Ryan Gosling", response: "Okay, maybe him... but he's not here! 🎥" },
+                { text: "The Dog", response: "Eww! 🐶" }
             ]
         }
     ],
