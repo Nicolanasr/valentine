@@ -170,7 +170,7 @@ function handleYes() {
 
     // Show the photo
     const img = document.createElement('img');
-    img.src = 'us.png';
+    img.src = `us.png?t=${new Date().getTime()}`; // Prevent caching
     img.className = 'fade-in';
     img.style.maxWidth = '100%';
     img.style.borderRadius = '15px';
