@@ -4,32 +4,32 @@ const config = {
         {
             text: "Zombie Apocalypse! 🧟‍♂️ What am I doing?",
             options: [
-                { text: "Leading the Army", isCorrect: true },
-                { text: "Crying in the closet", isCorrect: false },
-                { text: "Sacrificing you to save myself", isCorrect: false }
+                { text: "Leading the Army", response: "That's why you're the boss! 😎" },
+                { text: "Crying in the closet", response: "Don't worry, I'll protect you! 🛡️" },
+                { text: "Sacrificing you to save myself", response: "Wow... rude. 😂" }
             ]
         },
         {
             text: "What is the ONE food you'd trade me for? 🍣",
             options: [
-                { text: "Sushi", isCorrect: true },
-                { text: "Chicken Nuggets", isCorrect: false },
-                { text: "A single corn chip", isCorrect: false }
+                { text: "Sushi", response: "Good choice, I respect it. 🍣" },
+                { text: "Chicken Nuggets", response: "Really? Nuggies? 🍗" },
+                { text: "A single corn chip", response: "I'm worth more than a chip! 😭" }
             ]
         },
         {
             text: "My annoying habit that you secretly love? 🤪",
             options: [
-                { text: "Making Dad Jokes", isCorrect: true },
-                { text: "Singing in the shower", isCorrect: false },
-                { text: "Stealing the covers", isCorrect: false }
+                { text: "Making Dad Jokes", response: "I knew you secretly loved them! 🤡" },
+                { text: "Singing ", response: "My voice is angelic, admit it! 🎤" },
+                { text: "Acting as a child", response: "We all need that childishness" }
             ]
         },
         {
             text: "Who is the better kisser? 💋",
             options: [
-                { text: "You! (Obviously)", isCorrect: true },
-                { text: "Me (In my dreams)", isCorrect: false }
+                { text: "You! (Obviously)", response: "Correct answer! 😘" },
+                { text: "Me (In my dreams)", response: "Keep dreaming! 😴" }
             ]
         }
     ],
@@ -84,7 +84,7 @@ function updateUI() {
             const btn = document.createElement('button');
             btn.className = 'btn secondary-btn';
             btn.textContent = opt.text;
-            btn.onclick = () => handleAnswer(opt.isCorrect);
+            btn.onclick = () => handleAnswer(opt);
             optionsContainer.appendChild(btn);
         });
 
@@ -94,10 +94,16 @@ function updateUI() {
     }
 }
 
-function handleAnswer(isCorrect) {
-    // You could force correct answers, or just let them pass regardless (it's cuter/easier)
-    // Let's just pass them for flow, sweet and simple
-    nextStep();
+function handleAnswer(option) {
+    const response = option.response || "Interesting choice! 🤔";
+
+    // Show response and Next button
+    optionsContainer.innerHTML = `
+        <div class="fade-in" style="font-size: 1.5rem; font-weight: bold; color: #ff4d6d; margin: 20px 0;">
+            ${response}
+        </div>
+        <button class="btn primary-btn fade-in" onclick="nextStep()">Next ➡️</button>
+    `;
 }
 
 function showProposal() {
