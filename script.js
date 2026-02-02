@@ -14,7 +14,7 @@ const config = {
             options: [
                 { text: "Sushi", response: "Good choice, I respect it. 🍣" },
                 { text: "Chicken Nuggets", response: "Really? Nuggies? 🍗" },
-                { text: "A single corn chip", response: "I'm worth more than a chip! 😭" }
+                { text: "Truffle chips", response: "I'm worth more than a chip! 😭" }
             ]
         },
         {
