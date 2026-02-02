@@ -168,6 +168,16 @@ function handleYes() {
 
     mainText.textContent = "Best Valentine Ever! 🥰";
 
+    // Show the photo
+    const img = document.createElement('img');
+    img.src = 'us.png';
+    img.className = 'fade-in';
+    img.style.maxWidth = '100%';
+    img.style.borderRadius = '15px';
+    img.style.marginTop = '20px';
+    img.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+    optionsContainer.appendChild(img);
+
     // Confetti explosion
     triggerConfetti();
     setInterval(triggerConfetti, 2000);
